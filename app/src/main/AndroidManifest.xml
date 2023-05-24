@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.kalpesh.homeworkout">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/img"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/img"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HomeWorkout">
+        <activity
+            android:name=".foodActivityDetail"
+            android:exported="false" />
+        <activity
+            android:name=".thirdActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".thirdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".foodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".secondActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".secondActivity"
+            android:exported="false" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".splacescreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+
+    </application>
+
+</manifest>
